@@ -1,13 +1,13 @@
 
 <header> 
-  <div id="logo"><a href=""><img src="/assets/logo.png"/></a></div>
+  <div id="logo"><a href="http://anabtatecmobile.com"><img src="/assets/logo.png"/></a></div>
   
   <nav>
     <ul>
-      <li><a href="../">Home</a></li>
-      <li><a href="posts/">Posts</a></li>
-      <li><a href="gallery/">Gallery</a></li>
-      <li><a href="about/">About</a></li>
+       <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Posts', posts_path %></li>
+      <li><%= link_to 'Gallery', gallery_path %></li>
+     <li><%= link_to 'About', about_path %></li>
       <li><a href="contact/">Contact</a></li>
     </ul>
   </nav>
