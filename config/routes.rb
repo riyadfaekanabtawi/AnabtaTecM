@@ -10,7 +10,9 @@ resources :home
     match 'gallery/' => 'home#gallery'
       match 'about/' => 'home#about'
       match 'posts/' => 'posts#index'
-
+match "contact", to: "contact#index", as: "contact"
+  match "send_email", to: "contact#send_email",
+  as: "send_email", method: :post
   # Keep in mind you can assign values other than :controller and :action
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
